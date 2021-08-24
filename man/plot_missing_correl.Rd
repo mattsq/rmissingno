@@ -4,10 +4,12 @@
 \alias{plot_missing_correl}
 \title{Plot Missing Correlation}
 \usage{
-plot_missing_correl(data)
+plot_missing_correl(data, ...)
 }
 \arguments{
 \item{data}{a XXX}
+
+\item{...}{any arguments to corrplot::corrplot}
 }
 \value{
 XXX
