@@ -18,7 +18,9 @@
 
 plot_missing_correl <- function(data, ...) {
   data <- dplyr::mutate(data, dplyr::across(.cols = dplyr::everything(), ~ dplyr::if_else(is.na(.x), 1, 0)))
+  data <- dplyr::select(data, where(~ sum(.x) != length(.x)))
+  data <- dplyr::select(data, where(~ sum(.x) != 0))
   data_cor <- stats::cor(data, method = "spearman")
-  data_cor <- data_cor[is.na(data_cor)] <- 0
+  data_cor[is.na(data_cor)] <- 0
   corrplot::corrplot(data_cor, ...)
 }
