@@ -22,7 +22,7 @@ The goal of rmissingno is to emulate some of the interesting missing data explor
 
 ## Installation
 
-You can installl the he development version from [GitHub](https://github.com/) with:
+You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")

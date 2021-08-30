@@ -13,7 +13,7 @@ implementation is mine. API is deeply unstable and likely to change.
 
 ## Installation
 
-You can installl the he development version from
+You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
